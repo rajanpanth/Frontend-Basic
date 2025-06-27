@@ -8,3 +8,54 @@
     color: green;
     font-size: 20px;
 }
+
+/* attribute selector */
+p[title="lorem"]{
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* OR */
+
+#parent p[title="lorem"]{
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+
+#parent p[title="another paragraph"]{
+    color: rgb(13, 25, 193);
+}
+p[title="another paragraph"]{
+    color: red;
+}
+
+/* grouping selector */
+#a,#b,#c,#d{
+border-radius: 20px;
+box-shadow: 4px 4px 5px gray;
+border: 1px solid black;
+margin: 20px;
+}
+#a{
+    height: 30px;
+    width: 30px;
+    background-color: lightblue;
+
+}
+#b{
+    height: 50px;
+    width: 50px;
+    background-color: lightgreen;
+}
+#c{
+    height: 100px;
+    width: 100px;
+    background-color: lightcoral;`1
+}
+#d{
+    height: 150px;
+    width: 150px;
+    background-color: lightpink;
+}

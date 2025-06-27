@@ -1,0 +1,36 @@
+#tooltip{
+    height: 200px;
+    width: 600px;
+    background-color: #b6dbde;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    /* transition: all 0.3s ease-in-out; */
+}
+#tooltip-content{
+    padding: 5px;
+
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+    /* display: none; */
+    left: -400px;
+    position: absolute;
+    bottom: 10px;
+    transition: all 0.3s ease-in-out;
+ 
+
+}
+/* using pseudo class hover on parent */
+#tooltip:hover #tooltip-content{
+    /* display: block; */
+ left: 40px;
+
+
+}

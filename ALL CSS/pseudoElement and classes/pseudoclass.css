@@ -31,6 +31,45 @@
 #tooltip:hover #tooltip-content{
     /* display: block; */
  left: 40px;
-
-
 }
+/* changing background color when hovering same element */
+#login-btn:hover{
+    background-color: red;
+}
+
+.abc:first-child{
+    color: violet;
+}
+.abc:last-child{
+    color: brown;
+}
+
+.abc:nth-child(3){
+    color: blue;
+}
+h4:last-child{
+    font-size: 20px;
+ }
+ h4:nth-child(4){
+    color: blue;
+ }
+ h4:first-child{
+    font-size: 10px;
+ }
+
+ /* default state of ancor tag */
+ a:link{
+color: orange;
+ }
+ a:visited{
+    color: green;
+ }
+ a:active{
+    color: gray;
+ }
+ a:hover{
+    background-color: greenyellow;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+ }

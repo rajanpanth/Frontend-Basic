@@ -1,0 +1,27 @@
+
+/* pseudo element   ::first-line */
+
+p::first-line{
+color: red;
+}
+p.desc::first-letter{
+    font-size: 50px;
+    color: blue;
+    font-style: italic;
+}
+p::before{
+    content: "This is a pseudo element before the paragraph. ";
+    color: green;
+}
+p::after{
+    content: "######";
+}
+p::selection{
+    background-color: yellow;
+    color: purple;
+}
+
+li::marker{
+    color: purple;
+    font-size: large;
+}

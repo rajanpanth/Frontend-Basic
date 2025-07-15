@@ -1,13 +1,48 @@
 p{
-    font-size: 40px;
+    /* responsive font size */
+    font-size: 2rem;
     text-decoration: underline;
+    letter-spacing: 10px;
+    word-spacing: 30px;
+    text-align: justify;
+    line-height: 100px;
+    text-indent: 100px; /*Indentation of the first line*/
+    /* text-shadow => x-ofset y-offset blure-radius color; */
+    text-shadow: -10px -10px 5px purple;
+    font-family: cursive;
 
 }
 #overline {
     text-decoration: overline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    text-decoration-thickness: 5px;
     font-size: 30px;
+    text-transform: uppercase;
+
+}
+#overline:hover{
+    transition: all 5s ease-in-out;
+    transform: rotate(360deg);
+    
+}
+#box{
+    padding: 20px;
+    background-color: rgb(212, 183, 129);
+}
+#box:hover{
+    transition: all 2s ease-in-out;
+    transform: rotate(360deg);
 }
 #overthrough {
-    text-decoration: line-through;
+    text-decoration: line-through double rgba(0, 128, 0, 0.286) 3px;
+text-transform: capitalize;
     font-size: 30px;
 }
+body{
+    background-color: #f0f0f0;
+    /* font-family: Arial, sans-serif; */
+    /* color: #333; */
+}
+
+/* display and positioning */

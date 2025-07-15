@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    height: 500px;
+    width: 100%;
+    border-radius: 20px;
+    margin: 10px;
+}
+.first{
+    background-color: orange;
+}
+.second{
+    background-color: green;
+}
+.third{
+    background-color: purple;
+}
+
+.sticky-navbar{
+    height: 60px;
+    background-color: brown;
+    color: white;
+    padding: 0px 20px;
+    margin: 5px 10px;
+    position: sticky;
+    top: 5px;
+}
+#sticky-content{
+    width: 500px;
+    height: 600px;
+    background-color: lightblue;
+    overflow: auto;
+}

@@ -1,0 +1,69 @@
+h4 {
+    text-align: center;
+    color: rgb(6, 6, 107);
+    margin-top: 20px;
+}
+
+
+.icon {
+    background-color: rgb(6, 6, 107);
+    padding: 20px 15px;
+    border-radius: 20px 0px 0px 20px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    top: 45%;
+    right: -100px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.icon:hover {
+    right: 0px;
+}
+
+.icon i {
+    color: rgb(6, 6, 107);
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.icon1 {
+    background-color: rgb(42, 199, 55);
+    padding: 20px 15px;
+    /* border-radius: 20px 0px 0px 20px; */
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    top: 45%;
+    left: -100px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border-radius: 0px 20px 20px 0px;
+
+}
+.icon1:hover {
+    left: 0px;
+}
+.icon1 i {
+    color: rgb(10, 100, 23);
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}

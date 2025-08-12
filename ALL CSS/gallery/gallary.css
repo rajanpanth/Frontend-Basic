@@ -1,0 +1,68 @@
+/* .image-card{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    border-radius: 20px;
+    border: 2px solid green;
+    overflow: hidden;
+
+      background-color: #b6dbde;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+} */
+
+.image-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+/* .gallery{
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+
+
+#tooltip {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* #tooltip img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+} */
+
+#tooltip-content{
+    padding: 10px;
+    background-color: rgba(139, 69, 19, 0.9);
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+    text-align: center;
+}
+
+#tooltip:hover #tooltip-content{
+    transform: translateY(0);
+}

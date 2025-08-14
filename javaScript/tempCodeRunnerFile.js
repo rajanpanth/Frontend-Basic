@@ -1,0 +1,1 @@
+console.log(divide(10, 0)); 

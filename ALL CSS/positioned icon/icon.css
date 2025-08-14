@@ -1,0 +1,190 @@
+h4 {
+    text-align: center;
+    color: rgb(6, 6, 107);
+    margin-top: 20px;
+}
+
+
+.icon {
+    background-color: rgb(6, 6, 107);
+    padding: 20px 15px;
+    border-radius: 20px 0px 0px 20px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    top: 45%;
+    right: -100px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+.icon:hover {
+    right: 0px;
+}
+
+.icon i {
+    color: rgb(6, 6, 107);
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.icon1 {
+    background-color: rgb(42, 199, 55);
+    padding: 20px 15px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    top: 45%;
+    left: -100px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border-radius: 0px 20px 20px 0px;
+
+}
+
+.icon1:hover {
+    left: 0px;
+}
+
+.icon1 i {
+    color: rgb(10, 100, 23);
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.full {
+    height: 400px;
+    width: 400px;
+    background-color: rgb(50, 225, 94);
+    border-radius: 30px;
+    padding: 30px;
+    margin: 40px;
+    position: relative;
+    margin-left: 100px;
+}
+
+.ball {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 50px;
+
+}
+
+.ball:first-child {
+    background-color: rgb(6, 6, 107);
+    animation: 0.6s pulse linear infinite;
+}
+
+.ball:nth-child(2) {
+    background-color: rgb(112, 103, 18);
+    border-radius: 10px;
+    animation: 0.6s rotate linear infinite;
+}
+
+.ball:last-child {
+    background-color: rgb(255, 0, 0);
+    animation: 5s corners linear infinite;
+    margin: 0;
+    position: absolute;
+}
+/* stop */
+.ball:last-child:hover{
+ animation: none;
+  
+}
+
+/* spin animation */
+@keyframes pulse {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(2);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+        background-color: rgb(112, 103, 18);
+    }
+
+    to {
+        transform: rotate(360deg);
+        background-color: yellow;
+    }
+}
+
+/* @keyframes corners {
+
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(400px, 0);
+    }
+
+    50% {
+        transform: translate(400px, 400px);
+    }
+
+    75% {
+        transform: translate(0, 400px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+
+} */
+
+@keyframes corners {
+
+    0% {
+        top: -30px;
+        right: -30px;
+    }
+
+    25% {
+        top: 430px;
+        right: -30px;
+
+    }
+
+    50% {
+        top: 430px;
+        right: 430px;
+    }
+
+    75% {
+        top: -30px;
+        right: 430px;
+    }
+
+    100% {
+        top: -30px;
+        right: -30px;
+    }
+
+}

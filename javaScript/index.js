@@ -52,3 +52,25 @@ console.log("values of the person object: ", values);
 // arrays of key values pairs   
 const personArr = Object.entries(person);
 console.log("key value pairs of the person object: ", personArr);
+
+// for of loop
+
+keys.forEach((value, index) => {
+    console.log("index is: " + index + ", Value is: " + person[value]);
+});
+
+
+personArr.forEach((value, index) => {
+    // Destructuring the key and value from the array
+    var [key, val] = value;
+    console.log("index is: " + index + ", Key is: " + key + ", Value is: " + val);
+});
+
+
+
+personArr.forEach(
+    ([key, value]) => {
+        console.log(" Key is: " + key + ", Value is: " + value);
+    }
+);
+  
